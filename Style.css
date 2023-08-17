@@ -1,0 +1,266 @@
+body{
+	margin:0 px;
+}
+/* Header */
+#main-header{
+	height: 70vh;
+	width: 100vw;
+	opacity: 1;
+	background-image: url(./macbook_mouse.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; 
+}
+
+
+#main-header h1{
+	color: white;
+	font-size: 4.4rem;
+	position: relative;
+	top:135px;
+	font-family: sans-serif;
+	text-align: center;
+
+}
+/* Horizontal List */
+.horizontal-list{
+	list-style: none;
+	word-spacing: 20px;
+	font-size: 1.3rem;
+
+}
+.horizontal-list li a{
+	color: white;
+	text-decoration: none;
+}
+
+.horizontal-list li a:hover{
+	color:lightgrey;
+	text-decoration: underline;
+	transition: color 0.5s;
+}
+.horizontal-list li{
+	display: inline-block;
+}
+.text-centre{
+	text-align: center;
+}
+#icons{
+	position: relative;
+	top:88px;
+}
+#icons li a i:hover{
+	border-radius: 50%;
+	box-shadow: 0 0 17px 5px rgba(230,196,196,0.3);
+}
+#about{
+	margin:0;
+	padding: 0;
+}
+#about img{
+	border-radius: 50%;
+	height: 15rem;
+	width: 15rem;
+	position: relative;
+	left: 43vw;
+	bottom:7.1rem;
+	box-shadow: 0 0 4px 4px #d4d0d0;	
+}
+#about p{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 2rem;
+	margin-top: -20px;
+	font-weight: lighter;
+}
+section{
+	display: flex;
+	flex-direction: column;
+}
+section:nth-child(2n+1){
+	background-color: lightgrey;
+}
+.section-heading{
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: darkblue;
+	margin: 30px;
+}
+#skill-display{
+	background-color: #b3b3bb;
+	height: 1.5rem;
+	width: 9rem;
+	border-radius: 20px 20px 20px 20px;
+	margin-bottom: 30px;
+}
+#skill-progress{
+	height: 1.5rem;
+	border-radius: 20px 0 0 20px;
+	color: white;
+	font-size: 1.1rem;
+}
+#skill-position{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.mb_70{
+	width:70%;
+}
+.mb_65{
+	width: 65%;
+}
+.mb_80{
+	width: 80%;
+}
+.mb_75{
+	width: 75%;
+}
+#timeline{
+	width: 75%;
+	position: relative;
+	left: 12%;
+	margin-top: 40px;
+}
+#timeline-box{
+	position: relative;
+	left: 5%;
+	margin: 5px;
+	width: 40%;
+	min-height: 150px;
+	/*border: 2px solid black;*/
+}
+#timeline-box:nth-child(2n){
+	left: 53%;
+}
+#timeline-divider{
+	position: absolute;
+	left:50%;
+	top: 12%;
+	border:3px dashed skyblue;
+	width: 0;
+	height: 75%;
+}
+#timeline-traveller{
+	transform: rotate(90deg);
+	position: sticky;
+	top:15%;
+}
+.logo{
+	position: absolute;
+	left: 0;
+	width:3rem;
+	height: 3rem;
+	background-size: contain;
+
+}
+.institute{
+	position: absolute;
+	right: 0;
+	top:auto;
+	color: orange;
+	font-size: 1rem;
+	font-weight: bold;
+
+}
+.degree{
+	position: absolute;
+	right: 0;
+	font-weight: bolder;
+	font-size: 1.5rem;
+
+}
+.duration{
+	position: absolute;
+	right: 0;
+	top: 0.8rem;
+	color: grey;
+	font-size: 0.7rem;
+}
+.description{
+	position: absolute;
+	top:35%;
+	right: 0;
+	text-align: right;
+	color:grey;
+	font-size: 0.7rem;
+	font-family: sans-serif;
+	font-weight: lighter;
+}
+.description2{
+	position: absolute;
+	top:35%;
+	left: 0;
+	text-align: left;
+	color:grey;
+	font-size: 0.7rem;
+	font-family: sans-serif;
+	font-weight: lighter;
+}
+.orange{
+	background-color:orange;
+}
+.blue{
+	background-color: darkblue;
+}
+#contact{
+	background-color: #0d0d51;
+
+
+}
+.section-headings{
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+	margin: 30px;
+}
+
+.contact-box{
+	display: flex;
+	flex-direction: row;
+	width: 85%;
+	position: relative;
+	left: 8%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.box{
+	position: relative;
+	left: 5%;
+	margin: 20px;
+	width: 40%;
+	min-height: 150px;
+	color:white;
+}
+#input{
+	border:none;
+	background-color:#0d0d51;
+	border-bottom: 2px solid white; 
+	margin: 30px;
+	color:white;
+}
+input::placeholder{
+	color:lightgrey;
+	opacity: 0.8;
+}
+form{
+	color:lightgrey;
+
+}
+#text{
+	border:none;
+	background-color:#0d0d51;
+	border-bottom: 2px solid white; 
+	margin: 30px;
+
+}
+button{
+	background-color: #0d0d51;
+	border:1px solid white;
+	color: white;
+	padding: 5px;
+	position: absolute;
+	left: 18%;
+}

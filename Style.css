@@ -53,6 +53,7 @@ body{
 	border-radius: 50%;
 	box-shadow: 0 0 17px 5px rgba(230,196,196,0.3);
 }
+/*About-Section*/
 #about{
 	margin:0;
 	padding: 0;
@@ -73,6 +74,7 @@ body{
 	margin-top: -20px;
 	font-weight: lighter;
 }
+/*Skill-Section*/
 section{
 	display: flex;
 	flex-direction: column;
@@ -105,6 +107,79 @@ section:nth-child(2n+1){
 	flex-direction: row;
 	justify-content: space-around;
 }
+@media screen and (max-width: 768px){
+	#skill-position{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+	}
+	#skill-display{
+		background-color: #b3b3bb;
+		height: 1.5rem;
+		width: 16rem;
+		border-radius: 20px 20px 20px 20px;
+		margin-bottom: 30px;
+	}
+	#skill-progress{
+		height: 1.5rem;
+		border-radius: 20px 0 0 20px;
+		color: white;
+		font-size: 1.1rem;
+	}
+	Section #timeline-divider{
+		left: 5%;
+	}
+	Section #timeline-box{
+		left:12%;
+		width: 80%; 
+	}
+	Section #timeline-box:nth-child(2n){
+	left: 12%;
+	}
+	#timeline-box:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	top: 30%;
+	left: -10.9%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: #4491e0;
+	z-index: 1;
+	}
+	#about img{
+	border-radius: 50%;
+	height: 15rem;
+	width: 15rem;
+	position: relative;
+	left: 35vw;
+	bottom:7.1rem;
+	box-shadow: 0 0 4px 4px #d4d0d0;	
+	}
+	#icons{
+	position: relative;
+	top:80px;
+	}
+	#about p{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 2rem;
+	margin-top: -20px;
+	font-weight: lighter;
+	}
+	.description{
+	position: absolute;
+	top:35%;
+	left:0;
+	text-align: left;
+	color:grey;
+	font-size: 0.7rem;
+	font-family: sans-serif;
+	font-weight: lighter;
+	}
+
+}
 .mb_70{
 	width:70%;
 }
@@ -117,6 +192,7 @@ section:nth-child(2n+1){
 .mb_75{
 	width: 75%;
 }
+/*Experience*/
 #timeline{
 	width: 75%;
 	position: relative;
@@ -137,7 +213,7 @@ section:nth-child(2n+1){
 #timeline-divider{
 	position: absolute;
 	left:50%;
-	top: 12%;
+	top: 5%;
 	border:3px dashed skyblue;
 	width: 0;
 	height: 75%;
@@ -145,7 +221,30 @@ section:nth-child(2n+1){
 #timeline-traveller{
 	transform: rotate(90deg);
 	position: sticky;
-	top:15%;
+	top:4%;
+	z-index: 2;
+}
+#timeline-box:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	top: 30%;
+	right: -13%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: #4491e0;
+	z-index: 1;
+}
+#timeline-box:nth-child(2n)::after{
+	content: '';
+	position: absolute;
+	top: 30%;
+	left: -10.9%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: #4491e0;
+	z-index: 1;
 }
 .logo{
 	position: absolute;
@@ -204,9 +303,9 @@ section:nth-child(2n+1){
 .blue{
 	background-color: darkblue;
 }
+/*Contact-Section*/
 #contact{
-	background-color: #0d0d51;
-
+	background-image: linear-gradient(to top right,#0f0f7a,#090946);
 
 }
 .section-headings{

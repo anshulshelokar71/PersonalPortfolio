@@ -11,17 +11,20 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat; 
 }
-
+.dropbtn{
+	border:none;
+	visibility: hidden;
+}
 
 #main-header h1{
 	color: white;
 	font-size: 4.4rem;
 	position: relative;
-	top:135px;
+	top:90px;
 	font-family: sans-serif;
 	text-align: center;
-
 }
+
 /* Horizontal List */
 .horizontal-list{
 	list-style: none;
@@ -47,7 +50,7 @@ body{
 }
 #icons{
 	position: relative;
-	top:88px;
+	top:48px;
 }
 #icons li a i:hover{
 	border-radius: 50%;
@@ -68,6 +71,7 @@ body{
 	box-shadow: 0 0 4px 4px #d4d0d0;	
 }
 #about p{
+	padding: 20px;
 	text-align: center;
 	font-family: sans-serif;
 	font-size: 2rem;
@@ -158,28 +162,42 @@ section:nth-child(2n+1){
 	box-shadow: 0 0 4px 4px #d4d0d0;	
 	}
 	#icons{
-	position: relative;
-	top:80px;
+		position: relative;
+		top:48px;
 	}
 	#about p{
-	text-align: center;
-	font-family: sans-serif;
-	font-size: 2rem;
-	margin-top: -20px;
-	font-weight: lighter;
+		text-align: center;
+		font-family: sans-serif;
+		font-size: 2rem;
+		margin-top: -20px;
+		font-weight: lighter;
 	}
 	.description{
-	position: absolute;
-	top:35%;
-	left:0;
-	text-align: left;
-	color:grey;
-	font-size: 0.7rem;
-	font-family: sans-serif;
-	font-weight: lighter;
+		position: absolute;
+		top:35%;
+		left:0;
+		text-align: left;
+		color:grey;
+		font-size: 0.7rem;
+		font-family: sans-serif;
+		font-weight: lighter;
+	}
+	.contact{
+		padding: 50px;
+	}
+	.container{
+		flex-direction: column;
+	}
+	.container .contactInfo{
+		margin-bottom: 40px;
+	}
+	.contactForm .inputBox input{
+		width: 100%;
 	}
 
 }
+
+
 .mb_70{
 	width:70%;
 }
@@ -192,7 +210,7 @@ section:nth-child(2n+1){
 .mb_75{
 	width: 75%;
 }
-/*Experience*/
+
 #timeline{
 	width: 75%;
 	position: relative;
@@ -304,9 +322,115 @@ section:nth-child(2n+1){
 	background-color: darkblue;
 }
 /*Contact-Section*/
-#contact{
-	background-image: linear-gradient(to top right,#0f0f7a,#090946);
+.contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: linear-gradient(to top right,#0f0f7a,#3a0356);
 
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.container .contactInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.container .contactInfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+
+
+}
+.container .contactInfo .box .icon{
+	min-width: 60px;
+	height: 60px;
+	background-color:#fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size:22px; 
+}
+.container .contactInfo .box .text{
+	display: flex;
+	margin-left: 20px;
+	margin-top: -20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+	font-weight: 500;
+	color: #00bcd4;
+	margin-bottom: -8px;
+}
+.contactForm{
+	width: 40%;
+	padding: 40px;
+	background: inherit;
+}
+.contactForm h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border:none;
+	border-bottom: 2px solid white;
+	outline: none;
+	resize: none;
+	background-color:inherit; 
+	color: white;
+}
+.contactForm .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+	color: #e91e63;
+	font-size: 15px;
+	transform: translateY(-20px) !important;
+}
+.contactForm .inputBox input[type="submit"]{
+	width: 100px;
+	background:#00bcd4;
+	color: #fff;
+	border:none;
+	cursor: pointer;
+	padding: 10px;
+	font-size:18px;
 }
 .section-headings{
 	text-align: center;
@@ -316,50 +440,96 @@ section:nth-child(2n+1){
 	margin: 30px;
 }
 
-.contact-box{
-	display: flex;
-	flex-direction: row;
-	width: 85%;
-	position: relative;
-	left: 8%;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-.box{
-	position: relative;
-	left: 5%;
-	margin: 20px;
-	width: 40%;
-	min-height: 150px;
-	color:white;
-}
-#input{
-	border:none;
-	background-color:#0d0d51;
-	border-bottom: 2px solid white; 
-	margin: 30px;
-	color:white;
-}
-input::placeholder{
-	color:lightgrey;
-	opacity: 0.8;
-}
-form{
-	color:lightgrey;
 
-}
-#text{
-	border:none;
-	background-color:#0d0d51;
-	border-bottom: 2px solid white; 
-	margin: 30px;
 
-}
-button{
-	background-color: #0d0d51;
-	border:1px solid white;
+
+@media screen and (max-width:640px ){
+	#main-header h1{
 	color: white;
-	padding: 5px;
-	position: absolute;
-	left: 18%;
+	font-size: 3rem;
+	position: relative;
+	top:0px;
+	font-family: sans-serif;
+	text-align: center;
+	}
+	#icons{
+	position: relative;
+	top:-18px;
+	}
+	#about{
+	margin-left:20px;
+	}
+	#about p{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 1.3rem;
+	margin-top: -20px;
+	margin-top: -40px;
+	font-weight: lighter;
+	margin-left: 20px;
+	}
+	#about img{
+	border-radius: 50%;
+	height: 15rem;
+	width: 15rem;
+	position: relative;
+	left: 30vw;
+	bottom:7.1rem;
+	box-shadow: 0 0 4px 4px #d4d0d0;
+	}
+	.dropbtn {
+	  background-color: inherit;
+	  color: white;
+	  padding: 16px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	  visibility: visible;
+	}
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color:#bcaf85 ;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+	.dropdown-content a:hover {background-color:#7f6e4d; }
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	  box-shadow: 0 0 17px 5px rgba(20,0,20,0.6);
+	}
+	.dropdown:hover .dropbtn {
+	  background-color: #3e8e41;
+	}
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+

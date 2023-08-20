@@ -9,27 +9,32 @@
 </head>
 <body>
 	<header id = "main-header">
-		<nav>
-			<ul class="horizontal-list text-centre">
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#about">About</a>
-				</li>
-				<li>
-					<a href="#skills">Skills</a>
-				</li>
-				<li>
-					<a href="#experience">Experience</a>
-				</li>
-				<li>
-					<a href="#Education">Education</a>
-				</li>
-				<li>
-					<a href="#contact">Contacts</a>
-				</li>
-			<ul>
+		<nav id="navbar">
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa-solid fa-bars fa-2xl"></i></button>
+				<div class="dropdown-content">
+					<ul class="horizontal-list text-centre">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#about">About</a>
+						</li>
+						<li>
+							<a href="#skills">Skills</a>
+						</li>
+						<li>
+							<a href="#experience">Experience</a>
+						</li>
+						<li>
+							<a href="#Education">Education</a>
+						</li>
+						<li>
+							<a href="#contact">Contacts</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 		<br><br>
 		<h1 class="text-centre">Anshul Shelokar</h1>
@@ -41,26 +46,26 @@
 
 			</li>
 			<li>
-				<a href="">
+				<a href="https://stackoverflow.com/users/22415082/anshulshelokar71" target="_blank">
 					<i class="fa-brands fa-stack-overflow"></i>
 				</a>
 
 			</li>
 			<li>
-				<a href="">
+				<a href="" target="_blank">
 					<i class="fa-brands fa-google-plus-g"></i>
 				</a>
 
 			</li>
 			<li>
-				<a href="">
-					<i class="fa-brands fa-facebook-f"></i>
+				<a href="https://www.hackerrank.com/anshulshelokar71" target="_blank">
+					<i class="fa-brands fa-hackerrank"></i>
 				</a>
 
 			</li>
 			
 			<li>
-				<a href="">
+				<a href="https://www.quora.com/" target="_blank">
 					<i class="fa-brands fa-quora"></i>
 				</a>
 
@@ -73,6 +78,10 @@
 	<section id="about">
 		<div id="my-image">
 		<img src="./profilephoto.jpg">
+		</div>
+		<div class="section-heading">
+			<i class="fa-solid fa-infinity"></i>
+			<span>ABOUT</span>
 		</div>
 		<p>
 			My Name Anshul Shelokar, undergrad persuing B.Tech in Computer Engineering from COEP TECH.I've a keen interest in problem solving and interested
@@ -219,53 +228,107 @@
 
 	</section>
 
-	<section id ="contact">
+	<section class ="contact">
 		<div class="section-headings">
-		<span><i class="fa-regular fa-address-card"></i></span>
-		<span>
-			CONTACT
-		</span>
-	</div>
-	<div class="contact-box">
-		<div class ="box">
-			<form action="">
-				<input type="text" name="name" placeholder="Your Name" id="input"><br>
-				<input type="email" name="mail" placeholder="Your Email" id="input"><br><br>
-				<label for="text">&emsp;&emsp;Message</label>
-				<br>
-				<textarea placeholder="Message" id="text">
-				</textarea>
-				<br>
-				<button type="submit">SEND MESSAGE</button>
-
-
-			</form>
-
-
-		</div>
-		<div class="box">
-			<h3>Get in touch</h3>
-			<p></p>
-			<h3>My Address</h3>
+			<span><i class="fa-regular fa-address-card"></i></span>
 			<span>
-				<i class="fa-solid fa-location-dot"></i>
-				&ensp;Pune
-			</span><br><br>
-			<span>
-				<i class="fa-solid fa-mobile-screen"></i>
-				&ensp;7822892747
-			</span><br><br>
-			<span>
-				<i class="fa-regular fa-envelope"></i>
-				&ensp;anshulshelokar777@gmail.com
+				CONTACT
 			</span>
+		</div>
+		<div class="container">
+			
+				<div class="contactForm">
+					<form action="">
+						<div class="inputBox">
+							<input type="text" name="name" id="input">
+							<span>Full Name</span>
+						</div>
+						<div class="inputBox">
+							<input type="email" name="mail" id="input">
+							<span>Email</span>
+						</div>
+						<div class="inputBox">
+							<textarea></textarea>
+							<span>Type your Message...</span>
+						</div>
+						<div class="inputBox">
+							<input type="submit" name="" value="Send">
+						</div>
+					</form>
+				</div>
 
 
+			
+			<div class="contactInfo">
+					<div class="box">
+						<div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+						<div class="text">
+							<h3>My Address</h3>
+						<p>
+							COEP Hostel,<br>Pune,<br>411005
+						</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="fa-solid fa-mobile-screen"></i>
+						</div>
+						<div class="text">
+							<h3>Mob.No.</h3>
+							<p>+91 7822892747</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon">
+							<i class="fa-regular fa-envelope"></i>
+						</div>
+						<div class="text">
+						<h3>Email</h3>
+						<p>anshulshelokar777@gmail.com</p>
+						</div>
+					</div>
+
+
+
+				
+			</div>
 
 		</div>
+		<ul id="icons" class="horizontal-list text-centre">
+			<li>
+				<a href="https://www.linkedin.com/in/anshul-shelokar-b902a7250/" target="_blank">
+					<i class="fa-brands fa-linkedin-in"></i>
+				</a>
 
+			</li>
+			<li>
+				<a href="https://stackoverflow.com/users/22415082/anshulshelokar71" target="_blank">
+					<i class="fa-brands fa-stack-overflow"></i>
+				</a>
 
-	</div>	
+			</li>
+			<li>
+				<a href="" target="_blank">
+					<i class="fa-brands fa-google-plus-g"></i>
+				</a>
+
+			</li>
+			<li>
+				<a href="https://www.hackerrank.com/anshulshelokar71" target="_blank">
+					<i class="fa-brands fa-hackerrank"></i>
+				</a>
+
+			</li>
+			
+			<li>
+				<a href="https://www.quora.com/" target="_blank">
+					<i class="fa-brands fa-quora"></i>
+				</a>
+
+			</li>
+
+		</ul>
+		
+		
 	</section>
 </body>
 </html>

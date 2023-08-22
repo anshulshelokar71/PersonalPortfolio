@@ -83,9 +83,7 @@
 			<span>ABOUT</span>
 		</div>
 		<p>
-			I'm Anshul Shelokar, undergrad persuing B.Tech in Computer Engineering from COEP TECH.I've a keen interest in problem solving and interested
-			in web-development. 
-
+			I'm Anshul Shelokar, undergrad pursuing B.Tech in Computer Engineering from COEP TECH.I have keen interest in problem solving and web-development.Excited to learn new Tech-Stacks and upskill myself.
 
 
 		</p>
@@ -239,21 +237,21 @@
 		<div class="container">
 			
 				<div class="contactForm">
-					<form action="">
+					<form action="" name="google-sheet">
 						<div class="inputBox">
-							<input type="text" name="name" id="input">
+							<input type="text" name="Name" id="input">
 							<span>Full Name</span>
 						</div>
 						<div class="inputBox">
-							<input type="email" name="mail" id="input">
+							<input type="email" name="Email" id="input">
 							<span>Email</span>
 						</div>
 						<div class="inputBox">
-							<textarea></textarea>
+							<textarea name="Message"></textarea>
 							<span>Type your Message...</span>
 						</div>
 						<div class="inputBox">
-							<input type="submit" name="" value="Send">
+							<input type="submit" name="submit" value="Send">
 						</div>
 					</form>
 				</div>
@@ -340,5 +338,20 @@
 		
 		
 	</section>
+	 <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwwzf7pvgaNy4s6Xauno6oEsLvIedR2CnvJ2EEd3s6TdBy7Q1det99hYsnqD7TtE6Ei/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 
 </body>
 </html>

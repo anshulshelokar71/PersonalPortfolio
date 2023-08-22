@@ -51,6 +51,7 @@ body{
 #icons{
 	position: relative;
 	top:48px;
+	left:-1.6vw;
 }
 #icons li a i:hover{
 	border-radius: 50%;
@@ -66,14 +67,14 @@ body{
 	height: 15rem;
 	width: 15rem;
 	position: relative;
-	left: 43vw;
+	left: 41vw;
 	bottom:7.1rem;
 	box-shadow: 0 0 4px 4px #d4d0d0;
 }
 #about p{
 	padding: 20px;
 	text-align: center;
-	font-family:"Times New Roman", Times, serif; 
+	font-family:sans-serif; 
 	font-size: 2rem;
 	margin-top: -20px;
 	font-weight: lighter;
@@ -450,7 +451,6 @@ section:nth-child(2n+1){
 	color: white;
 	margin-top: 50px;
 	position: relative;
-	left: 2.5%;
 	border-top: 2px solid white;
 	padding: 10px;
 	font-family: sans-serif;
